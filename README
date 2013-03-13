@@ -1,0 +1,13 @@
+This is your TrainingPeaks OAuth client example
+================================================
+
+This is a Java example for an OAuth2 client connecting to TrainingPeaks OAuth server.
+
+1. Install the Play2.0 framework. Here is the Play2.0 walkthough: http://www.playframework.com/documentation/2.1.0/JavaTodoList
+2. Download these files under the "play" directory. It should be at the same location as play-2.1.0 after the installation.
+3. Open a command prompt and navigate to the directory where you downloaded these files.
+4. At the prompt: C:\Users\me\Peaksware\Sandbox\play\TPOAuthClient_Java> play
+5. If you want to set this up for editing in IntelliJ, run at the prompt: [TPOAuthClient_Java] $ idea. 
+6. Other IDEs can also be set up. See here: http://www.playframework.com/documentation/2.1.0/IDE
+7. At the prompt: [TPOAuthClient_Java] $ run
+8. Open a browser to http://localhost:9000
