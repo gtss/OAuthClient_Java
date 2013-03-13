@@ -45,10 +45,10 @@ public class Application extends Controller {
     /**
      * Global instances of TrainingPeaks OAuth server URLs.
      */
-    private static final String TOKEN_SERVER_URL = "http://dev20-t430:8900/OAuthAuthorizationServer/OAuth/Token";
-    private static final String AUTHORIZATION_SERVER_URL = "http://dev20-t430:8900/OAuthAuthorizationServer/OAuth/Authorize";
-    private static final String RESOURCE_URL = "http://dev20-t430:8900/OAuthAuthorizationServer/ClientAccess/V1/TrainingPeaks";
-    private static final String CALLBACK_URL = Play.application().configuration().getString("clientID");
+    private static final String TOKEN_SERVER_URL = Play.application().configuration().getString("token_server_url");
+    private static final String AUTHORIZATION_SERVER_URL = Play.application().configuration().getString("authorization_server_url");
+    private static final String RESOURCE_URL = Play.application().configuration().getString("resource_url");
+    private static final String CALLBACK_URL = Play.application().configuration().getString("callback_url");
 
     /**
      * Display the splash page for initiating the OAuth process
@@ -92,7 +92,7 @@ public class Application extends Controller {
             ResourceUrl url = new ResourceUrl(RESOURCE_URL);
             url.setFields("id,tags,title,url");
             HttpRequest resourceRequest = requestFactory.buildGetRequest(url);
-            String content = resourceRequest.execute().parseAsString();
+            String content = "http://" + resourceRequest.execute().parseAsString();
 
             return redirect(content);
         } else {

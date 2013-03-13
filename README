@@ -11,3 +11,11 @@ This is a Java example for an OAuth2 client connecting to TrainingPeaks OAuth se
 6. Other IDEs can also be set up. See here: http://www.playframework.com/documentation/2.1.0/IDE
 7. At the prompt: [TPOAuthClient_Java] $ run
 8. Open a browser to http://localhost:9000
+9. The client is configured to negotiate with our UAT server and callback to localhost:9000/callback which is a valid route in this example
+
+
+TO CHANGE THE OAUTH URLS THIS CLIENT POINTS AT:
+1. Open conf/application.conf. 
+2. The configuration settings are at the bottom of this configuration file
+
+
