@@ -3,6 +3,7 @@ This is your TrainingPeaks OAuth client example
 
 This is a Java example for an OAuth2 client connecting to TrainingPeaks OAuth server.
 
+TO GET UP AND RUNNING WITH THIS CLIENT:
 1. Install the Play2.0 framework. Here is the Play2.0 walkthough: http://www.playframework.com/documentation/2.1.0/JavaTodoList
 2. Download these files under the "play" directory. It should be at the same location as play-2.1.0 after the installation.
 3. Open a command prompt and navigate to the directory where you downloaded these files.
@@ -13,9 +14,11 @@ This is a Java example for an OAuth2 client connecting to TrainingPeaks OAuth se
 8. Open a browser to http://localhost:9000
 9. The client is configured to negotiate with our UAT server and callback to localhost:9000/callback which is a valid route in this example
 
+THE EXAMPLE CODE IS IN THESE FILES:
+/app/controllers/Application.java
+/app/src/OAuth2ClientCredentials.java
+/app/src/ResourceUrl.java
 
-TO CHANGE THE OAUTH URLS THIS CLIENT POINTS AT:
-1. Open conf/application.conf. 
-2. The configuration settings are at the bottom of this configuration file
-
-
+THE CONFIGS ARE IN THIS FILE:
+/conf/application.conf
+** All importane config settings are at the bottom of the config file **

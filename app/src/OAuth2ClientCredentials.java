@@ -8,13 +8,15 @@
 
 package src;
 
+import play.Play;
+
 public class OAuth2ClientCredentials {
 
     /** Value of the "API Key". */
-    public static final String CLIENT_ID = "rwcas";
+    public static final String CLIENT_ID = Play.application().configuration().getString("client_id");
 
     /** Value of the "API Secret". */
-    public static final String CLIENT_SECRET = "V7R76wX2ma0Mnnd7rxZWuEC9te0=";
+    public static final String CLIENT_SECRET = Play.application().configuration().getString("client_secret");
 
     public static void errorIfNotSpecified() {
         if (CLIENT_ID.startsWith("Enter ")) {
